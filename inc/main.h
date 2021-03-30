@@ -2,7 +2,6 @@
 #define FALSE 0
 #define TRUE 1
 
-#define P3_6 0
 typedef unsigned int	UWORD16;
 typedef unsigned long  	UWORD32;
 

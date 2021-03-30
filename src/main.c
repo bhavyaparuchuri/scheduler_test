@@ -1,9 +1,9 @@
-#include<stdio.h>
-#include "../inc/dum_headers.h"
+#include <stdio.h>
+#include "main.h"
 
 
+int INHIB_DETECTED;
 
-int INHIB_DETECTED_1   =    P3_6;
 UWORD16 EEP_DB_Config[];
 
 void SCHED_Setup_Main();
@@ -11,7 +11,7 @@ void SCHED_Ventilation_Main();
 
 int main()
 {
-	if  ( (INHIB_DETECTED_1 == FALSE)
+	if  ( (INHIB_DETECTED == FALSE)
 			&& (EEP_DB_Config[4] == FALSE) 
 			&& (EEP_DB_Config[4] == FALSE) )
 	{
