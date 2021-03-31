@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/manoj/Project2021/app/scheduler_test/src/SCHED_Setup_Main.c" "/home/manoj/Project2021/app/scheduler_test/build/CMakeFiles/output.dir/src/SCHED_Setup_Main.c.o"
-  "/home/manoj/Project2021/app/scheduler_test/src/SCHED_Ventilation_Main.c" "/home/manoj/Project2021/app/scheduler_test/build/CMakeFiles/output.dir/src/SCHED_Ventilation_Main.c.o"
-  "/home/manoj/Project2021/app/scheduler_test/src/dum_headers.c" "/home/manoj/Project2021/app/scheduler_test/build/CMakeFiles/output.dir/src/dum_headers.c.o"
-  "/home/manoj/Project2021/app/scheduler_test/src/main.c" "/home/manoj/Project2021/app/scheduler_test/build/CMakeFiles/output.dir/src/main.c.o"
+  "/home/bhavya/Work/schedular_test/src/SCHED_Setup_Main.c" "/home/bhavya/Work/schedular_test/build/CMakeFiles/output.dir/src/SCHED_Setup_Main.c.o"
+  "/home/bhavya/Work/schedular_test/src/SCHED_Ventilation_Main.c" "/home/bhavya/Work/schedular_test/build/CMakeFiles/output.dir/src/SCHED_Ventilation_Main.c.o"
+  "/home/bhavya/Work/schedular_test/src/dum_headers.c" "/home/bhavya/Work/schedular_test/build/CMakeFiles/output.dir/src/dum_headers.c.o"
+  "/home/bhavya/Work/schedular_test/src/main.c" "/home/bhavya/Work/schedular_test/build/CMakeFiles/output.dir/src/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
