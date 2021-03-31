@@ -8,3 +8,7 @@ set(SOURCE
 
 include_directories(inc)
 add_executable(output ${SOURCE})
+add_subdirectory(test)
+add_subdirectory(lib/googletest-master)
+
+

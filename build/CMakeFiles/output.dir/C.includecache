@@ -6,25 +6,47 @@
 
 #IncludeRegexTransform: 
 
-../inc/dum_headers.h
+../inc/DB/DB_Control.h
 
-/home/bhavya/Work/schedular_test/inc/dum_headers.h
+../inc/DB/DB_Event.h
+
+../inc/main.h
+DB/DB_Control.h
+../inc/DB/DB_Control.h
+DB/DB_Event.h
+../inc/DB/DB_Event.h
+
+/home/bhavya/Work/schedular_test/inc/DB/DB_Config.h
+
+/home/bhavya/Work/schedular_test/inc/DB/DB_Control.h
+
+/home/bhavya/Work/schedular_test/inc/DB/DB_Event.h
 
 /home/bhavya/Work/schedular_test/src/SCHED_Setup_Main.c
-../inc/dum_headers.h
-/home/bhavya/Work/schedular_test/inc/dum_headers.h
+main.h
+/home/bhavya/Work/schedular_test/src/main.h
 
 /home/bhavya/Work/schedular_test/src/SCHED_Ventilation_Main.c
-../inc/dum_headers.h
-/home/bhavya/Work/schedular_test/inc/dum_headers.h
+main.h
+/home/bhavya/Work/schedular_test/src/main.h
 
 /home/bhavya/Work/schedular_test/src/dum_headers.c
-dum_headers.h
-/home/bhavya/Work/schedular_test/src/dum_headers.h
+main.h
+/home/bhavya/Work/schedular_test/src/main.h
+../inc/DB/DB_Control.h
+/home/bhavya/Work/schedular_test/inc/DB/DB_Control.h
+../inc/DB/DB_Event.h
+/home/bhavya/Work/schedular_test/inc/DB/DB_Event.h
 
 /home/bhavya/Work/schedular_test/src/main.c
 stdio.h
 -
-../inc/dum_headers.h
-/home/bhavya/Work/schedular_test/inc/dum_headers.h
+main.h
+/home/bhavya/Work/schedular_test/src/main.h
+../inc/DB/DB_Control.h
+/home/bhavya/Work/schedular_test/inc/DB/DB_Control.h
+../inc/DB/DB_Event.h
+/home/bhavya/Work/schedular_test/inc/DB/DB_Event.h
+../inc/DB/DB_Config.h
+/home/bhavya/Work/schedular_test/inc/DB/DB_Config.h
 

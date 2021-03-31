@@ -1,0 +1,11 @@
+cmake-build-*/
+.vs/
+CMakeLists.txt.user
+CmakeCache.txt
+CMakeFiles
+CMakeScripts
+Makefile
+cmake_install.cmake
+install_manifest.txt
+
+

@@ -1,4 +1,4 @@
-#include "../inc/dum_headers.h"
+#include "main.h"
 UWORD16 MAIN_TopTimer5ms_2 = FALSE;
 
 void SCHED_Ventilation_entry();
