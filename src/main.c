@@ -5,16 +5,14 @@
 #include "../inc/DB/DB_Config.h"
 
 
-int INHIB_DETECTED_1;
-
-UWORD16 EEP_DB_Config[];
+int INHIB_DETECTED; // should be read from inhibit key press event
 
 void SCHED_Setup_Main();
 void SCHED_Ventilation_Main();
 
 int main()
 {
-	if  ( (INHIB_DETECTED_1 == FALSE) //declared from io_declare.h
+	if  ( (INHIB_DETECTED == FALSE) 
 		&& (EEP_DB_Config[VENTIL_REQ_U16] == FALSE) 
 		&& (EEP_DB_Config[ADJUST_KEYLOCK_U16] == FALSE) )
 	{
