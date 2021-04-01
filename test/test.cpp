@@ -1,10 +1,9 @@
 #include "gtest/gtest.h"
 #include <stdexcept>
-#include "../inc/DB/DB_Control.h"
-#include "../inc/main.h"
+#include "../inc/database/write_to_db.h"
 
-TEST(DB_control,value)
+TEST(DB_UTILITY_TESTS, writefunctiontesting)
 {
-	  EXPECT_EQ(1,DB_ControlRead(MAINTENANCE_MODE_U16));
-	  EXPECT_EQ(1,DB_ControlRead(CIRCUIT_CHECK_MODE_U16));
+	  EXPECT_EQ(write_to_db(CONTROL_DB,END_OF_OPERATION_U16,1),1);
+	  
 }

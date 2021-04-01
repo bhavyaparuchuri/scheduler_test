@@ -1,6 +1,26 @@
-#ifndef CONFIG_DB_H_
-#define CONFIG_DB_H_
+/******************************************************************************/
+/*																										*/
+/* Project Number	: 	RB0505     			     		                       	  		*/
+/*																										*/
+/*----------------------------------------------------------------------------*/
+/*                                                                 			  	*/
+/* Filename	: DB_Config.h					   				                  		*/
+/*                                                           				  		*/
+/*----------------------------------------------------------------------------*/
 
+/*----------------------------------------------------------------------------*/
+
+
+/******************************************************************************/
+/*%C Functionnal description : 	datas declaration for config base				*/
+/*                                                            				  		*/
+/******************************************************************************/
+/*%I 	Input Parameter : 			None			      	                       	*/
+/*%IO Input/Output Parameter : 	None 	        			                  		*/
+/*%O 	Output Parameter : 			None				            				  		*/
+/******************************************************************************/
+#ifndef CONFIG_H
+#define CONFIG_H
 /******************************************************************************/
 /*                     ENUM DECLARATION				                         	*/
 /******************************************************************************/
@@ -94,7 +114,7 @@ typedef enum {
 	RAZ_COUNTER_PAT_YEAR_U16,
 	RAZ_COUNTER_PAT_HOUR_U16,
 	RAZ_COUNTER_PAT_MIN_U16,	 
-	BAD_ERASE_U16,  	/* record of flash interrupt*/
+	BAD_ERASE_U16,	 					/* record of flash interrupt*/
 	SOUND_LEVEL_SELECT_U16,
 	PREVIOUS_SOUND_LEVEL_SELECT_U16,
    	CURVE_DISPLAY_TYPE_MODE_U16,
@@ -138,6 +158,5 @@ typedef enum {
 /*                     CONSTANT DECLARATION			                         	*/
 /******************************************************************************/
 /* Base Compute Array*/
-extern unsigned int config_db[end_of_db_config_table];
-
-#endif // CONFIG_DB_H_ 
+extern unsigned int DB_Config[end_of_db_config_table];
+#endif

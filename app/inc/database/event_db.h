@@ -1,26 +1,5 @@
-/****************************************************************************/
-/*																			*/
-/* Project Number	: 	RB0505     			     		              	  	*/
-/*																			*/
-/*--------------------------------------------------------------------------*/
-/*                                                             			  	*/
-/* Filename	: DB_Event.h 													*/
-/*                                                       				  	*/
-/*--------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------------*/
-
-
-/****************************************************************************/
-/*%C Functionnal description : 	data declaration for Event base             */
-/*                                                        				  	*/
-/****************************************************************************/
-/*%I 	Input Parameter : 			None			                       	*/
-/*%IO Input/Output Parameter : 		None 	        	                   	*/
-/*%O 	Output Parameter : 			None			 	  				  	*/
-/****************************************************************************/
-#ifndef DB_EVENT_H
-#define DB_EVENT_H
+#ifndef EVENT_DB_H_
+#define EVENT_DB_H_
 
 typedef unsigned int    UWORD16;
 typedef unsigned long   UWORD32;
@@ -286,9 +265,10 @@ typedef enum {
 	EVENT_ALT_O2_PRESSURE_OFFSET,	/* Event number:	252	*/
  	RESERVED_253,	/* Event number:	253	*/
 	RESERVED_254,	/* Event number:	254	*/
-	End_Anomalie	/* Event number:	255	*/
+	End_Anomalie,	/* Event number:	255	*/
+	end_of_event_table
 } e_EVENT_ENUM;                                                                            
 
+extern unsigned int event_db[end_of_event_table];
 
-
-#endif
+#endif  // EVENT_DB_H_

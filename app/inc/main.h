@@ -1,3 +1,5 @@
+#ifndef MAIN_H_
+#define MAIN_H_
 #include "DB/DB_Control.h"
 #include "DB/DB_Event.h"
 #define FALSE 0
@@ -41,3 +43,5 @@ UWORD16 KEY_Touch_Detection(e_SYS_KeyboardInput Touch);
 void DB_ControlWrite(e_DB_CONTROL Id,UWORD16 Value);
 UWORD16 DB_ControlRead(e_DB_CONTROL Id);
 void DB_EventMngt (UWORD16 EventNb);
+
+#endif  // MAIN_H_

@@ -1,26 +1,5 @@
-/******************************************************************************/
-/*																										*/
-/* Project Number	: 	RB0505     			     		                       	  		*/
-/*																										*/
-/*----------------------------------------------------------------------------*/
-/*                                                                 			  	*/
-/* Filename	: DB_Control.h					   				                  		*/
-/*                                                           				  		*/
-/*----------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------------*/
-
-
-/******************************************************************************/
-/*%C Functionnal description : datas for Control Base									*/
-/*                                                            				  		*/
-/******************************************************************************/
-/*%I 	Input Parameter :				None                                  		  	*/
-/*%IO Input/Output Parameter : 	None  	        			                  	*/
-/*%O 	Output Parameter : 			None		 	                 				  		*/
-/******************************************************************************/
-#ifndef CONTROL_H 
-#define CONTROL_H
+#ifndef CONTROL_DB_H_ 
+#define CONTROL_DB_H_
 
 typedef unsigned int    UWORD16;
 typedef unsigned long   UWORD32;
@@ -153,6 +132,6 @@ typedef enum
 /*                     CONSTANT DECLARATION			                           */
 /******************************************************************************/
 /* Base Control array */
-extern UWORD16 DB_Control[end_of_db_control_table];
+extern unsigned int control_db[end_of_db_control_table];
 
-#endif  // END OF CONTROL_H
+#endif  //  CONTROL_DB_H_
