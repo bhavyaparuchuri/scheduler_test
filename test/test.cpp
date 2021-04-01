@@ -1,6 +1,9 @@
 #include "gtest/gtest.h"
 #include <stdexcept>
-#include "../inc/database/write_to_db.h"
+
+extern "C" {
+#include "../app/inc/database/write_to_db.h"
+}
 
 TEST(DB_UTILITY_TESTS, writefunctiontesting)
 {

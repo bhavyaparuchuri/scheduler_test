@@ -13,9 +13,9 @@ typedef enum {
 	end_of_db_types_tables
 }e_db_types;
 
-unsigned int *ptr_dbtable[end_of_db_types_table];
-ptr_table [CONFIG_DB] = config_db;
-ptr_table [CONTROL_DB] = control_db;
-ptr_table [EVENTDB] = event_db;
+//unsigned int *ptr_dbtable[end_of_db_types_table];
+//ptr_table [CONFIG_DB] = config_db;
+//ptr_table [CONTROL_DB] = control_db;
+//ptr_table [EVENTDB] = event_db;
 
 #endif // DB_UTILS_H_

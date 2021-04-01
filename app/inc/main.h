@@ -1,7 +1,7 @@
 #ifndef MAIN_H_
 #define MAIN_H_
-#include "DB/DB_Control.h"
-#include "DB/DB_Event.h"
+#include "database/control_db.h"
+#include "database/event_db.h"
 #define FALSE 0
 #define TRUE 1
 
