@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include "../inc/main.h"
 #include "../inc/database/control_db.h"
+#include "../inc/database/config_db.h"
+#include "../inc/database/event_db.h"
 #include "../inc/database/event_db.h"
 #include "../inc/database/config_db.h"
 
 
 int INHIB_DETECTED; // should be read from inhibit key press event
-UWORD16 EEP_DB_Config[];
+//UWORD16 EEP_DB_Config[];
 
 
 void SCHED_Setup_Main();
