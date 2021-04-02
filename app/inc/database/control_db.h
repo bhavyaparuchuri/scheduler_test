@@ -132,6 +132,5 @@ typedef enum
 /*                     CONSTANT DECLARATION			                           */
 /******************************************************************************/
 /* Base Control array */
-extern UWORD16 control_db[end_of_db_control_table];
 
 #endif  //  CONTROL_DB_H_

@@ -10,8 +10,6 @@
 /*   errors                                                                   */
 /*                                                                            */
 /******************************************************************************/
-typedef unsigned int    UWORD16;
-typedef unsigned long   UWORD32;
 
 typedef enum {
 	ADJUST_LANGUAGE_U16=0,
@@ -136,10 +134,5 @@ typedef enum {
  	end_of_db_config_table
 } e_DB_CONFIG;
 
-/******************************************************************************/
-/*                     CONSTANT DECLARATION			                         	*/
-/******************************************************************************/
-/* Base Compute Array*/
- extern UWORD16 config_db[end_of_db_config_table];
 
 #endif // CONFIG_DB_H_ 
