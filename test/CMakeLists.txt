@@ -12,4 +12,3 @@ set(SOURCES_MAIN main.cpp
 add_executable(${PROJECT_NAME} ${SOURCES_MAIN})
 target_link_libraries(${PROJECT_NAME} pthread gtest)
 add_subdirectory(lib/googletest-master)
-message("${CMAKE_SOURCE_DIR}")

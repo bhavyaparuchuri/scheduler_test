@@ -3,12 +3,10 @@
 
 int write_to_db(e_db_types db_type, unsigned int id, unsigned int value)
 {
-//	if(db_type >= 0 && db_type < end_of_db_types_tables)
+	if(db_type >= 0 && db_type < end_of_db_types_table)
 	{
 		//if(id < end_of_db_table)
-		//{
-		//	ptr_dbtable[db_type][id] = value;
-		//}
+			ptr_table[db_type][id] = value;
 	}
-return value;	
+	return value;	
 }

@@ -13,5 +13,6 @@ typedef enum {
 	end_of_db_types_table
 }e_db_types;
 
+unsigned int  *ptr_table[end_of_db_types_table];
 
 #endif // DB_UTILS_H_

@@ -131,7 +131,7 @@ typedef enum {
 	PRESSURE_SUPPORT_CHANGED_U16,
 	VOLUNTARY_STOP_ALARM_ACTIVATION,	
 	SOUND_TYPE_SELECT_U16,
- 	end_of_db_config_table
+ 	end_of_db_table
 } e_DB_CONFIG;
 
 

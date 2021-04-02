@@ -12,6 +12,3 @@ include_directories(${CMAKE_SOURCE_DIR}/schedular_test/app/inc
 	${CMAKE_SOURCE_DIR}/schedular_test/app/inc/scheduling
 	)
 add_executable(CMAKE_PROJECT_NAME ${SOURCE})
-message("CMAKE_CURRENT_SOURCE_DIR: ${CMAKE_CURRENT_SOURCE_DIR}")
-message("CMAKE_SOURCE_DIR:${CMAKE_SOURCE_DIR}")
-
