@@ -1,21 +1,15 @@
-cmake_minimum_required(VERSION 3.15)
-project(proj)
-set(BINARY test)
-set(SCR_BASE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../app)
-message("current directory:${CMAKE_CURRENT_SOURCE_DIR}")
-message("main directory:${SCR_BASE_DIR}")
-set(HEADERS 
-	${SCR_BASE_DIR}/inc/database/write_to_db.h
-	)
-set(SOURCES 
-	main.cpp 
-	test.cpp
-	${SCR_BASE_DIR}/src/database/write_to_db.c
-	)
-include_directories(../app/inc)
-add_executable(${BINARY} ${SOURCES} ${HEADERS})
-add_test(NAME ${BINARY} COMMAND ${BINARY})
-target_link_libraries(${BINARY} PUBLIC gtest)
+cmake_minimum_required(VERSION 3.6.0)
+project(test)
+#find_package(GTest REQUIRED)
+include_directories(
+        ${CMAKE_SOURCE_DIR}/app/inc/database
+        ${GTEST_INCLUDE_DIRS}
+        )
+set(SOURCES_MAIN main.cpp
+        test.cpp
+        ${CMAKE_SOURCE_DIR}/app/src/database/write_to_db.c
+        )
+add_executable(${PROJECT_NAME} ${SOURCES_MAIN})
+target_link_libraries(${PROJECT_NAME} pthread gtest)
 add_subdirectory(lib/googletest-master)
-
-
+message("${CMAKE_SOURCE_DIR}")
