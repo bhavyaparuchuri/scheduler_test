@@ -1,4 +1,5 @@
-#include "main.h"
+#include "../../inc/main.h"
+
 UWORD16 MAIN_TopTimer5ms_2 = FALSE;
 
 void SCHED_Ventilation_entry();

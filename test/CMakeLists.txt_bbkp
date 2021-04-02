@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.15)
+project(project)
+set(BINARY test)
+set(HEADERS )
+set(SOURCES main.cpp test.cpp)
+add_executable(${BINARY} ${SOURCES} ${HEADERS})
+add_test(NAME ${BINARY} COMMAND ${BINARY})
+target_link_libraries(${BINARY} PUBLIC gtest)
+add_subdirectory(lib/googletest-master)
+
+
