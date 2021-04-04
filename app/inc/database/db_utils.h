@@ -13,5 +13,17 @@ typedef enum {
 	end_of_db_types_table
 }e_db_types;
 
+typedef struct {
+	unsigned int min;
+	unsigned int max;
+	unsigned int step;
+	unsigned int defaultvalue;
+} t_EEPROM_DB;
+
+typedef struct {
+	t_EEPROM_DB *ptr_eeprom_db;
+	unsigned int db_size;
+} t_DEFAULT_DB;
+
 
 #endif // DB_UTILS_H_
