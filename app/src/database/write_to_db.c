@@ -1,12 +1,22 @@
 #include "../../inc/database/write_to_db.h"
 #include "../../inc/database/db_utils.h"
 
-int write_to_db(e_db_types db_type, unsigned int id, unsigned int value)
+typedef   signed int 	SWORD16;
+
+int write_to_db(e_db_types db_type, unsigned int Id, unsigned int Value)
 {
 	if(db_type >= 0 && db_type < end_of_db_types_table)
 	{
-		//if(id < end_of_db_table)
-			ptr_table[db_type][id] = value;
+		if(Id < ptr_default_db[db_type]->db_size)
+		{
+			if (Value > ptr_default_db[db_type]->ptr_eeprom_db->max) Value = ptr_default_db[db_type]->ptr_eeprom_db->max;
+			else if (Value < ptr_default_db[db_type]->ptr_eeprom_db->min) Value = ptr_default_db[db_type]->ptr_eeprom_db->min; 
+			ptr_dbtable[db_type][Id] = Value;
+			return 1;
+		}
+		else
+			return -1;
 	}
-	return value;	
+	else
+		return -1;
 }
