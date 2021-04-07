@@ -13,6 +13,26 @@
 /*                                                                            */
 /******************************************************************************/
 
+//#define NONE 0xAAAA
+
+#define FALSE 0
+
+#define TRUE 1
+
+
+#define MICRON			0x2C
+#define MT29F2G08AAB	0xDA
+#define MT29F2G16AAB	0xCA
+#define MT29F4G08BAB	0xDC
+#define MT29F4G16BAB	0xCC
+#define MT29F8G08FAB	0xDC
+
+typedef enum
+{
+	ERASE_OK = 0,
+	BAD_TOTAL_ERASE
+} e_BadEraseState;
+
 
 
 #define tADJUST_LANGUAGE                                                        {0,18,1,3}
@@ -31,7 +51,7 @@
 #define tOFFSET_INSP_FLOW_6                                             {465,700, NONE,581}                             
 #define tOFFSET_INSP_FLOW_7                                             {560,850, NONE,706}                             
 #define tOFFSET_INSP_FLOW_8                                             {650,1022,NONE,880}                     
-#define tOFFSET_EXH_FLOW_1                         
+#define tOFFSET_EXH_FLOW_1							{160,250, NONE,210}				
 #define tOFFSET_EXH_FLOW_2                                                      {185,265, NONE,227}                             
 #define tOFFSET_EXH_FLOW_3                                                      {215,315, NONE,275}                     
 #define tOFFSET_EXH_FLOW_4                                                      {200,600, NONE,325}                     
@@ -111,6 +131,24 @@
 #define tTRIGGER_E_POSITIVE                                         {0,1,1,0}
 #define tVOLUNTARY_STOP_ALARM_ACTIVATION            {FALSE,TRUE,1,TRUE}
 #define tAPNEA_ALARM_ACTIVATION                                     {FALSE,TRUE,1,TRUE}
+#define tFLASH_MEM_MANUFACTURER					{0,255,1,MICRON}
+#define tFLASH_MEM_DEVICE						{0,255,1,MT29F2G08AAB}
+#define tFLASH_MEMORY_FIVE_ADDRESS_CYCLES		{FALSE,TRUE,1,FALSE}
+#define tFLASH_MONIT_WRITE_BLOCK						{0,65535,1,1}
+#define tFLASH_MONIT_WRITE_PAGE						{0,65535,1,0}
+#define tFLASH_MONIT_WRITE_COLUMN						{0,65535,1,0}
+#define tFLASH_TREND_WRITE_BLOCK						{0,65535,1,342}
+#define tFLASH_TREND_WRITE_PAGE						{0,65535,1,0}
+#define tFLASH_TREND_WRITE_COLUMN						{0,65535,1,0}
+#define tFLASH_FIRST_PARTITION_FULL				{FALSE,TRUE,1,FALSE}
+#define tFLASH_SECOND_PARTITION_FULL			{FALSE,TRUE,1,FALSE}
+#define tPARAM_COMPATIBILITY                 {0,4,1,0}
+#define tIHM_LOCKED_FRAME_ID				 {4, 6, 2, 4} /* FRAME_VENTILATION == 4, FRAME_ALARM == 6, see IHM_IhmType.hpp */
+#define tPEDIACTRIC_CIRCUIT                     {0, 1, 1, 0}
+#define tPRESSURE_SUPPORT_RELATIVE		{0, 1, 1, 0}  /* 0 = Absolut ,1 = Relative */
+#define tPRESSURE_SUPPORT_CHANGED_U16  {FALSE,TRUE,1,FALSE}
+#define tPREVIOUS_MODE						{NONE,NONE,NONE,FALSE}
+
 
 
 

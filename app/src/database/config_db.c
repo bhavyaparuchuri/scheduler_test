@@ -1,5 +1,4 @@
 #include "../../inc/database/config_db.h"
-#include "../../inc/db_IhmAccessParaDataBase.h"
 
 // create a config_db in ram
 unsigned int config_db[end_of_db_config_table];

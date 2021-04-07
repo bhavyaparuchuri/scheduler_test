@@ -5,6 +5,92 @@
 typedef unsigned int    UWORD16;
 typedef unsigned long   UWORD32;
 
+typedef enum
+{
+	ORIGINAL = 0,
+	COMPLIANT
+} e_Alarm_Tone;
+
+typedef enum 
+{
+	VOL = 0,
+	PRES,
+	PSVT,
+	VSIMV,
+	PSIMV,
+	CPAP,
+  	nb_of_mode
+} e_MODE_TYPES;
+
+typedef enum
+{
+	VEN_EXHALATION = 251,
+	VEN_INSPIRATION_CONTROLED,
+	VEN_INSPIRATION_TRIGGERED,
+	VEN_VENTIL_DISABLE
+} e_VentilState;
+
+typedef enum 
+{
+	NONE = 0,
+	AC,
+	DC,
+	BATTERY
+} e_SupplyInfo;  
+
+/* Calibration States */
+
+typedef enum
+{
+	NO_CALIB = 0,
+	SEGMENT_1,
+	SEGMENT_2,
+	SEGMENT_3,
+	SEGMENT_4,
+	SEGMENT_5,
+	SEGMENT_6,
+	SEGMENT_7,
+	SEGMENT_8,
+	TEST_LIMITES_REQUEST,
+	TEST_LIMITES_OK,
+	TEST_LIMITES_FALSE,
+	AUTOCALIB_SEG_1,
+	AUTOCALIB_SEG_2,
+	AUTOCALIB_SEG_3,
+	AUTOCALIB_SEG_4,
+	AUTOCALIB_SEG_5,
+	AUTOCALIB_SEG_6,
+	AUTOCALIB_SEG_7,
+	AUTOCALIB_SEG_8,
+	END_AUTOCALIB
+} e_CalibrationCommand;
+/* Control States */
+
+typedef enum 
+{
+	NO_CONTROL = 0,
+	CONTROL_SPEED,
+	CONTROL_PRESSURE,
+	CONTROL_PRESSURE_VALVE,
+	CONTROL_PRESSURE_MAINT,
+	CONTROL_FLOW,
+	CONTROL_FLOW_EXH,
+	CONTROL_FLOW_O2,
+	CONTROL_FLOW_O2_MANUEL,
+	CONTROL_PRESSURE_O2
+} e_VEN_ControllerType;
+
+/* SIMV States */
+
+typedef enum
+{
+	CAV_Cycle = 0,
+	CV_Cycle,
+	PSV_Cycle,
+	CAP_Cycle,
+	CP_Cycle
+} e_VEN_SIMVCycle;
+
 /******************************************************************************/
 /*                     ENUM DECLARATION				                         	*/
 /******************************************************************************/
@@ -115,7 +201,7 @@ typedef unsigned long   UWORD32;
 #define tFLAT_INT_U16                           {NONE,NONE,NONE,FALSE}
 #define tFLAT_PROXI_U16                         {NONE,NONE,NONE,FALSE}
 #define tVALVE_O2_CMD_U16                                   {NONE,NONE,NONE,FALSE}
-#define tCPAP_TRIG_I                                                        {NONE,NONE,NONE,FALSE
+#define tCPAP_TRIG_I                                                        {NONE,NONE,NONE,FALSE}
 #define tCPAP_TRIG_E                                                        {NONE,NONE,NONE,FALSE}
 #define tCONTROLER_TYPE_U16                     {NONE,NONE,NONE,FALSE}
 #define tVTI_DISPLAY_DELAY_U16                  {FALSE,TRUE,1,FALSE}
