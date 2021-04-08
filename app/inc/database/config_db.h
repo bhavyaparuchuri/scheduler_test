@@ -276,4 +276,7 @@ typedef enum {
 // create a config_db in ram
 unsigned int config_db[end_of_db_config_table];
 
+
+// extern t_DEFAULT_DB default_config_db;
+// extern unsigned int config_db[end_of_db_config_table];
 #endif // CONFIG_DB_H_ 
