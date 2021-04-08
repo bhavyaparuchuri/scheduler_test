@@ -27,9 +27,9 @@ typedef struct {
 } t_DEFAULT_DB;
 
 
-unsigned int *ptr_dbtable[end_of_db_types_table];
-
-t_DEFAULT_DB *ptr_default_db[end_of_db_types_table];
-
+extern unsigned int config_db[end_of_db_config_table];
+extern unsigned int control_db[end_of_db_control_table];
+extern t_DEFAULT_DB default_control_db;
+extern t_DEFAULT_DB default_config_db;
 
 #endif // DB_UTILS_H_
