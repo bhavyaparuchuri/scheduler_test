@@ -1,7 +1,7 @@
 #ifndef CONTROL_DB_H_ 
 #define CONTROL_DB_H_
 
-#include "db_utils.h"
+//#include "db_utils.h"
 typedef unsigned int    UWORD16;
 typedef unsigned long   UWORD32;
 
@@ -338,5 +338,6 @@ typedef enum
 	/******************************************************************************/
 	/* Base Control array */
 
+unsigned int control_db[end_of_db_control_table];
 
 #endif  //  CONTROL_DB_H_

@@ -1,7 +1,6 @@
 #ifndef CONFIG_DB_H_
 #define CONFIG_DB_H_
-#include "db_utils.h"
-
+//#include "db_utils.h"
 
 /******************************************************************************/
 /*                     ENUM DECLARATION				                         	*/
@@ -274,6 +273,7 @@ typedef enum {
 	SOUND_TYPE_SELECT_U16,
 	end_of_db_config_table
 } e_DB_CONFIG;
-
+// create a config_db in ram
+unsigned int config_db[end_of_db_config_table];
 
 #endif // CONFIG_DB_H_ 

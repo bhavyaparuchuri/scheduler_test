@@ -1,7 +1,8 @@
 #include "../../inc/database/config_db.h"
+#include "../../inc/database/db_utils.h"
 
 // create a config_db in ram
-unsigned int config_db[end_of_db_config_table];
+//unsigned int config_db[end_of_db_config_table];
 
 /********************************************************************
  * created a eeprom_config_db in ram 
@@ -128,7 +129,7 @@ t_EEPROM_DB eeprom_config_db[end_of_db_config_table]=
      tSOUND_TYPE_SELECT_U16
 };
 
-t_DEFAULT_DB default_config_db;
-default_config_db.ptr_eeprom_db = eeprom_config_db;
-default_config_db.db_size = end_of_db_config_table;
+t_DEFAULT_DB default_config_db = { eeprom_config_db,end_of_db_config_table};
+//default_config_db.ptr_eeprom_db = eeprom_config_db;
+//default_config_db.db_size = end_of_db_config_table;
 
