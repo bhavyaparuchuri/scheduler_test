@@ -1,7 +1,7 @@
 #ifndef CONTROL_DB_H_ 
 #define CONTROL_DB_H_
 
-//#include "db_utils.h"
+// #include "db_utils.h"
 typedef unsigned int    UWORD16;
 typedef unsigned long   UWORD32;
 

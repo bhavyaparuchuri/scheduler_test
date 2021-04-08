@@ -1,6 +1,5 @@
 #ifndef CONFIG_DB_H_
 #define CONFIG_DB_H_
-//#include "db_utils.h"
 
 /******************************************************************************/
 /*                     ENUM DECLARATION				                         	*/
@@ -11,8 +10,6 @@
 /*   errors                                                                   */
 /*                                                                            */
 /******************************************************************************/
-
-//#define NONE 0xAAAA
 
 #define FALSE 0
 
@@ -31,7 +28,6 @@ typedef enum
 	ERASE_OK = 0,
 	BAD_TOTAL_ERASE
 } e_BadEraseState;
-
 
 
 #define tADJUST_LANGUAGE                                                        {0,18,1,3}
@@ -277,6 +273,4 @@ typedef enum {
 unsigned int config_db[end_of_db_config_table];
 
 
-// extern t_DEFAULT_DB default_config_db;
-// extern unsigned int config_db[end_of_db_config_table];
 #endif // CONFIG_DB_H_ 

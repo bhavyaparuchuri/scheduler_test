@@ -128,15 +128,8 @@ t_EEPROM_DB eeprom_config_db[end_of_db_config_table]=
      tVOLUNTARY_STOP_ALARM_ACTIVATION,
      tSOUND_TYPE_SELECT_U16
 };
-//ptr_dbtable[CONFIG_DB] = config_db;
 
-t_DEFAULT_DB default_config_db = { eeprom_config_db,end_of_db_config_table};
-//default_config_db.ptr_eeprom_db = eeprom_config_db;
-//default_config_db.db_size = end_of_db_config_table;
-
-/*
-t_DEFAULT_DB default_config_db;
-default_config_db.ptr_eeprom_db = eeprom_config_db;
-default_config_db.db_size = end_of_db_config_table;
-ptr_default_db[CONFIG_DB] = &default_config_db;
-*/
+t_DEFAULT_DB default_config_db = {
+    eeprom_config_db,
+    end_of_db_config_table
+};
