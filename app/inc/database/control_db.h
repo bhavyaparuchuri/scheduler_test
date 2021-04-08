@@ -337,6 +337,7 @@ typedef enum
 	/*                     CONSTANT DECLARATION			                           */
 	/******************************************************************************/
 	/* Base Control array */
-
+// extern t_DEFAULT_DB default_control_db;
+// extern unsigned int control_db[end_of_db_control_table];
 
 #endif  //  CONTROL_DB_H_
