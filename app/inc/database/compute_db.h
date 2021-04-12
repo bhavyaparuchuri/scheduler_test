@@ -178,6 +178,6 @@ typedef enum
 	end_of_db_compute_table
 } e_DB_COMPUTE;
 
-unsigned int compute_db[end_of_db_compute_table];
+
 
 #endif

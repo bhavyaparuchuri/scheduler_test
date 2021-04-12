@@ -133,3 +133,6 @@ t_DEFAULT_DB default_config_db = {
     eeprom_config_db,
     end_of_db_config_table
 };
+
+// create a config_db in ram
+unsigned int config_db[end_of_db_config_table];

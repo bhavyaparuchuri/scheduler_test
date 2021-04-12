@@ -90,8 +90,9 @@ t_EEPROM_DB eeprom_compute_db[end_of_db_compute_table]={
     sLEAK_TEST_RESULT_U16,
 };
 
-t_DEFAULT_DB default_compute_db = {
+t_DEFAULT_EXT_DB default_compute_db = {
     eeprom_compute_db,
     end_of_db_compute_table
 };
 
+unsigned int compute_db[end_of_db_compute_table];

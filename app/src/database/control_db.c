@@ -128,3 +128,5 @@ t_DEFAULT_DB default_control_db = {
     eeprom_control_db,
     end_of_db_control_table
 };
+
+unsigned int control_db[end_of_db_control_table];

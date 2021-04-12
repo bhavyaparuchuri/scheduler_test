@@ -84,6 +84,5 @@ typedef enum {
 #define BAT_CHARGE						1
 #define BAT_DISCHARGE					2
 
-unsigned int powersupply_db[end_of_db_powersupply_table];
 
 #endif

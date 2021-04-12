@@ -38,5 +38,4 @@ typedef enum {
 	end_of_db_measurement_table
 } e_DB_MEASUREMENT;
 
-unsigned int measurement_db[end_of_db_control_table];
 #endif

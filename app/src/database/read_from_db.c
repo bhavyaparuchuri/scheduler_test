@@ -1,8 +1,9 @@
-#include "../../inc/database/write_to_db.h"
 #include "../../inc/database/read_from_db.h"
-#include "../../inc/database/db_utils.h"
-int read_from_db(e_db_types db_type, unsigned int id)
+#include <stdio.h>
+unsigned int read_from_db(e_db_types db_type, unsigned int id)
 {
-	   return ptr_dbtable[db_type][id];
+	printf("ptr_dbtable[db_type] %p \n",ptr_dbtable[db_type]);
+	printf(" the value : %d \n",ptr_dbtable[db_type][id]);
+	return ptr_dbtable[db_type][id];
 }
 

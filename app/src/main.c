@@ -14,7 +14,8 @@ int main()
 {
 	int ret;
 	ret = write_to_db(CONTROL_DB,END_OF_OPERATION_U16,1);
-	printf("ret value = %d\n",ret);
+	
+	printf("control_db[END_OF_OPERATION_U16] = %d\n",control_db[END_OF_OPERATION_U16]);
 
 	// if  ( (INHIB_DETECTED == FALSE) 
 	// 	&& (EEP_DB_Config[VENTIL_REQ_U16] == FALSE) 

@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "write_to_db.h": "c"
+        "write_to_db.h": "c",
+        "db_utils.h": "c"
     }
 }

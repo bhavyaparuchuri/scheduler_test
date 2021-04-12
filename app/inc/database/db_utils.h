@@ -9,10 +9,14 @@
 typedef enum {
 	CONFIG_DB,
 	CONTROL_DB,
+	end_of_db_types_table
+} e_db_types;
+
+typedef enum {
 	COMPUTE_DB,
 	POWERSUPPLY_DB,
-	end_of_db_types_table
-}e_db_types;
+	end_of_db_ext_types
+} e_db_ext_types;
 
 typedef struct {
 	unsigned int min;
@@ -22,9 +26,23 @@ typedef struct {
 } t_EEPROM_DB;
 
 typedef struct {
+	/* data */
+	t_EEPROM_DB c_eeprom_db;
+	unsigned int issigned;
+} t_DEFAULT_EXTND_DB;
+
+
+typedef struct {
 	t_EEPROM_DB *ptr_eeprom_db;
 	unsigned int db_size;
 } t_DEFAULT_DB;
+
+typedef struct {
+	/* data */
+	t_DEFAULT_EXTND_DB *ptr_eeprom_ext_db;
+	unsigned int db_size;
+} t_DEFAULT_EXT_DB;
+
 
 extern unsigned int config_db[end_of_db_config_table];
 extern unsigned int control_db[end_of_db_control_table];

@@ -2,7 +2,7 @@
 #include "../../inc/database/db_utils.h"
 
 //const t_TEST_EEPROM_DB_SATURATE cDB_Saturate_POWERSUPPLY[end_of_db_powersupply_table]=
-t_EEPROM_DB eeprom_powersupply_db[end_of_db_powersupply_table]=
+t_DEFAULT_EXTND_DB eeprom_powersupply_db[end_of_db_powersupply_table]=
 {
     sV_BAT_U16,
     sTEMP_BAT_S16,
@@ -41,9 +41,11 @@ t_EEPROM_DB eeprom_powersupply_db[end_of_db_powersupply_table]=
     sAGING_U16,
 };
 
-t_DEFAULT_DB default_powersupply_db = {
+t_DEFAULT_EXT_DB default_powersupply_db = {
     eeprom_powersupply_db,
     end_of_db_powersupply_table
 };
+
+unsigned int powersupply_db[end_of_db_powersupply_table];
 
 
