@@ -4,7 +4,6 @@ unsigned int const *ptr_dbtable1[end_of_db_types_table] = {
   config_db,
   control_db,
   
-  
 };
 
 unsigned int const *ptr_dbtable2[end_of_db_ext_types] = {
