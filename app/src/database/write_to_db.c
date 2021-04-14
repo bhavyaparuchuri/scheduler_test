@@ -82,7 +82,7 @@ UWORD16 write_type2(e_db_types db_type, unsigned int Id, unsigned int Value)
 
 int write_to_db(e_db_types db_type,unsigned int Id, unsigned int Value)
 {
-	if(db_type == (e_db_types)config_db || db_type == (e_db_types)control_db)
+	if(db_type == (e_db_types)CONFIG_DB || db_type == (e_db_types)CONTROL_DB || db_type == (e_db_types)RTC_DB || db_type == (e_db_types)USB_DB || db_type == (e_db_types)VERSION_DB || db_type == (e_db_types)TREND_DB)
 	{
 		printf("%s db_type : %d\n",__func__,db_type);
 		Result = write_type1(db_type,Id,Value);
