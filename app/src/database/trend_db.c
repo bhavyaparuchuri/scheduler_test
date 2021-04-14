@@ -1,0 +1,56 @@
+#include "../../inc/database/trend_db.h"
+#include "../../inc/database/db_utils.h"
+
+t_EEPROM_DB eeprom_trend_db[end_of_db_trend_table]=
+{
+    tDB_TREND_VENTIL_HOUR, 
+    tDB_TREND_VENTIL_MIN,
+    tDB_TREND_AVG_VTI, 
+    tDB_TREND_AVG_VTE, 
+    tDB_TREND_AVG_VM,  
+    tDB_TREND_AVG_FR,  
+    tDB_TREND_LEAK_MODE,
+    tDB_TREND_AVG_LEAK,    
+    tDB_TREND_AVG_PI,  
+    tDB_TREND_IA,      
+    tDB_TREND_APNEA,       
+    tDB_TREND_PERCENT_CONTROLLED,
+    tDB_TREND_PERCENT_TRIGGERED,
+    tDB_TREND_SAVE_RTC_DAY,    
+    tDB_TREND_SAVE_RTC_MONTH,
+    tDB_TREND_SAVE_RTC_YEAR,   
+    tDB_TREND_SAVE_PC_HOUR,
+    tDB_TREND_SAVE_PC_MIN,
+    tDB_TREND_NB_APNEA,
+    tDB_TREND_APNEA_TIME,
+    tDB_TREND_NB_CYCLE_COUNTER_MSB,
+    tDB_TREND_NB_CYCLE_COUNTER_LSB,
+    tDB_TREND_NB_CYCLE_TRIGERRED_MSB,
+    tDB_TREND_NB_CYCLE_TRIGERRED_LSB,
+    tDB_TREND_NB_CYCLE_CONTROLLED_MSB,
+    tDB_TREND_NB_CYCLE_CONTROLLED_LSB,
+    tDB_TREND_VENTIL_REPORT_UPD,
+    tDB_TREND_IHM_VENTIL_HOUR, 
+    tDB_TREND_IHM_VENTIL_MIN,
+    tDB_TREND_IHM_AVG_VTI, 
+    tDB_TREND_IHM_AVG_VTE, 
+    tDB_TREND_IHM_AVG_VM,  
+    tDB_TREND_IHM_AVG_FR,  
+    tDB_TREND_IHM_LEAK_MODE,
+    tDB_TREND_IHM_AVG_LEAK,    
+    tDB_TREND_IHM_AVG_PI,  
+    tDB_TREND_IHM_IA,  
+    tDB_TREND_IHM_APNEA,   
+    tDB_TREND_IHM_PERCENT_CONTROLLED,
+    tDB_TREND_IHM_PERCENT_TRIGGERED,
+    tDB_TREND_IHM_SAVE_RTC_DAY,
+    tDB_TREND_IHM_SAVE_RTC_MONTH,
+    tDB_TREND_IHM_SAVE_RTC_YEAR
+};
+
+t_DEFAULT_DB default_trend_db = {
+    eeprom_trend_db,
+    end_of_db_trend_table
+};
+
+unsigned int trend_db[end_of_db_trend_table];

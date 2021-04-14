@@ -2,7 +2,7 @@
 #include "../../inc/database/db_utils.h"
 
 
-t_EEPROM_DB eeprom_compute_db[end_of_db_compute_table]={
+t_DEFAULT_EXTND_DB eeprom_compute_db[end_of_db_compute_table]={
     sMEASURE_VALVE_PRESSURE_S16 ,
     sFILTER_VALVE_PRESSURE_S16 ,
     sMEASURE_INTERNAL_PRESSURE_S16 ,

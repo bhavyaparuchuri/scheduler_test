@@ -10,6 +10,10 @@ set(SOURCES_MAIN main.cpp
         ${CMAKE_SOURCE_DIR}/app/src/database/write_to_db.c
         ${CMAKE_SOURCE_DIR}/app/src/database/config_db.c
         ${CMAKE_SOURCE_DIR}/app/src/database/control_db.c
+        ${CMAKE_SOURCE_DIR}/app/src/database/rtc_db.c
+        ${CMAKE_SOURCE_DIR}/app/src/database/usb_db.c
+        ${CMAKE_SOURCE_DIR}/app/src/database/trend_db.c
+        ${CMAKE_SOURCE_DIR}/app/src/database/version_db.c
         ${CMAKE_SOURCE_DIR}/app/src/database/powersupply_db.c
         ${CMAKE_SOURCE_DIR}/app/src/database/compute_db.c
 	${CMAKE_SOURCE_DIR}/app/src/database/db_utils.c
