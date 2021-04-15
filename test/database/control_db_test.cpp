@@ -7,15 +7,14 @@ extern "C" {
 #include "../../app/inc/database/control_db.h"
 }
 
-TEST(DB_UTILITY_TESTS, writefunctiontesting)
+TEST(DB_UTILITY_TEST_2, control_write)
 {
-	EXPECT_EQ(write_to_db(CONTROL_DB,END_OF_OPERATION_U16,1),read_from_db(CONTROL_DB,END_OF_OPERATION_U16));
-	  
+	EXPECT_EQ(write_to_db(CONTROL_DB,VENTIL_AUTHORIZATION_U16,1),1);
 }
 
-TEST(DB_UTILITY_TESTS, readfunctiontesting)
+TEST(DB_UTILITY_TEST_2, control_read)
 {
 	printf("control_db[END_OF_OPERATION_U16] is: %d \n",control_db[END_OF_OPERATION_U16]);
-	// control_db[END_OF_OPERATION_U16] = 1;
-	EXPECT_EQ(read_from_db(CONTROL_DB,END_OF_OPERATION_U16),1);
+	EXPECT_EQ(read_from_db(CONTROL_DB,VENTIL_AUTHORIZATION_U16),1);
 }
+

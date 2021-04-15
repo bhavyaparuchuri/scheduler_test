@@ -8,7 +8,10 @@ include_directories(
         ${GTEST_INCLUDE_DIRS}
         )
 set(SOURCES_MAIN main.cpp
-        database/control_db_test.cpp
+	database/control_db_test.cpp
+	database/config_db_test.cpp
+	database/compute_db_test.cpp
+	database/powersupply_db_test.cpp
         ${CMAKE_SOURCE_DIR}/app/src/database/write_to_db.c
         ${CMAKE_SOURCE_DIR}/app/src/database/config_db.c
         ${CMAKE_SOURCE_DIR}/app/src/database/control_db.c

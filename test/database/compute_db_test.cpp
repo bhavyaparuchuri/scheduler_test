@@ -6,7 +6,6 @@ extern "C" {
 
 TEST(DB_UTILITY_TESTS, writefunctiontesting)
 {
-	  EXPECT_EQ(write_to_db(CONTROL_DB,END_OF_OPERATION_U16,1),1);
-	  EXPECT_EQ(write_to_db(CONTROL_DB,END_OF_OPERATION_U16,1),1);
-	  	  
+	  	  EXPECT_EQ(write_to_db(COMPUTE_DB,BLOWER_COMMAND_U16,1),1);
+
 }
