@@ -3,6 +3,8 @@ project(test)
 #find_package(GTest REQUIRED)
 include_directories(
         ${CMAKE_SOURCE_DIR}/app/inc/database
+        ${CMAKE_SOURCE_DIR}/app/inc/actuator
+        ${CMAKE_SOURCE_DIR}/app/inc/ventilation
         ${GTEST_INCLUDE_DIRS}
         )
 set(SOURCES_MAIN main.cpp
@@ -19,6 +21,8 @@ set(SOURCES_MAIN main.cpp
         ${CMAKE_SOURCE_DIR}/app/src/database/compute_db.c
 	${CMAKE_SOURCE_DIR}/app/src/database/db_utils.c
         ${CMAKE_SOURCE_DIR}/app/src/database/read_from_db.c
+        ${CMAKE_SOURCE_DIR}/app/src/actuator/ACT_BlowerCmd.c
+	${CMAKE_SOURCE_DIR}/app/src/general/Saturation.c
         )
 add_executable(${PROJECT_NAME} ${SOURCES_MAIN})
 target_link_libraries(${PROJECT_NAME} pthread gtest)
