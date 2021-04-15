@@ -12,6 +12,7 @@ file(GLOB sources
 		"${CMAKE_SOURCE_DIR}/app/src/database/control_db.c"
 		"${CMAKE_SOURCE_DIR}/app/src/database/compute_db.c"
 		"${CMAKE_SOURCE_DIR}/app/src/database/powersupply_db.c"
+		"${CMAKE_SOURCE_DIR}/app/src/database/measurement_db.c"
 	)
 
 include_directories("${CMAKE_SOURCE_DIR}/app/inc"

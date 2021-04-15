@@ -6,7 +6,8 @@ control_db,
 rtc_db,
 usb_db,
 version_db,
-trend_db
+trend_db,
+measurement_db
 }; 
 
 unsigned int const *ptr_dbtable2[end_of_db_ext_types] = {
@@ -20,7 +21,8 @@ t_DEFAULT_DB const *ptr_default_db[end_of_db_types_table] = {
   &default_rtc_db,
   &default_usb_db,
   &default_version_db,
-  &default_trend_db
+  &default_trend_db,
+  &default_measurement_db
 };
 
 t_DEFAULT_EXT_DB const *ptr_default_ext_db[end_of_db_ext_types] = {

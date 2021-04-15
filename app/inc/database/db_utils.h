@@ -9,6 +9,7 @@
 #include "usb_db.h"
 #include "version_db.h"
 #include "trend_db.h"
+#include "measurement_db.h"
 
 typedef enum {
 	CONFIG_DB,
@@ -17,6 +18,7 @@ typedef enum {
 	USB_DB,
 	VERSION_DB,
 	TREND_DB,
+	MEASUREMENT_DB,
 	end_of_db_types_table
 } e_db_types;
 
@@ -55,6 +57,7 @@ extern unsigned int config_db[end_of_db_config_table];
 extern unsigned int control_db[end_of_db_control_table];
 extern unsigned int compute_db[end_of_db_compute_table];
 extern unsigned int powersupply_db[end_of_db_powersupply_table];
+extern unsigned int measurement_db[end_of_db_measurement_table];
 extern unsigned int rtc_db[end_of_db_rtc_table];
 extern unsigned int usb_db[end_of_db_usb_table];
 extern unsigned int version_db[end_of_db_version_table];
@@ -64,6 +67,7 @@ extern t_DEFAULT_DB default_config_db;
 extern t_DEFAULT_DB default_rtc_db;
 extern t_DEFAULT_DB default_usb_db;
 extern t_DEFAULT_DB default_version_db;
+extern t_DEFAULT_DB default_measurement_db;
 extern t_DEFAULT_DB default_trend_db;
 extern t_DEFAULT_EXT_DB default_compute_db;
 extern t_DEFAULT_EXT_DB default_powersupply_db;

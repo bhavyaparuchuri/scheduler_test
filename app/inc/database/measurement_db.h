@@ -1,29 +1,17 @@
-/******************************************************************************/
-/*																										*/
-/* Project Number	: 	RB0505     			     		                       	  		*/
-/*																										*/
-/*----------------------------------------------------------------------------*/
-/*                                                                 			  	*/
-/* Filename	: DB_Measurement.h			   				                  		*/
-/*                                                           				  		*/
-/*----------------------------------------------------------------------------*/
+#ifndef MEASUREMENT_DB_H_ 
+#define MEASUREMENT_DB_H_
 
-/*----------------------------------------------------------------------------*/
+#define sPATIENT_PRESSURE_CAN 		 {0,0,0,0}
+#define sPATIENT_PRESSURE_PROXI 	 {0,0,0,0}
+#define sVALVE_PRESSURE_CAN		 {0,0,0,0} 
+#define sQI_CAN				 {0,0,0,0} 	
+#define sQE_CAN 			 {0,0,0,0} 
+#define sINFO_SUPPLY_CAN		 {0,0,0,0} 
+#define sABS_PRESSURE_CAN		 {0,0,0,0} 
+#define sO2_PRESSURE_CAN		 {0,0,0,0} 
+#define sQO2_CAN		         {0,0,0,0}
 
 
-/******************************************************************************/
-/*%C Functionnal description : 	datas declaration for measurement base			*/
-/*                                                            				  		*/
-/******************************************************************************/
-/*%I 	Input Parameter : 			None			      	                       	*/
-/*%IO Input/Output Parameter : 	None 	        			                  		*/
-/*%O 	Output Parameter : 			None				            				  		*/
-/******************************************************************************/
-#ifndef MEASUREMENT_H
-#define MEASUREMENT_H
-/******************************************************************************/
-/*                     ENUM DECLARATION				                         	*/
-/******************************************************************************/
 /* Measurement base */
 typedef enum {
 	PATIENT_PRESSURE_CAN_U16=0,
