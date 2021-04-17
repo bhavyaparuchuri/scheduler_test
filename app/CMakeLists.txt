@@ -14,6 +14,10 @@ file(GLOB sources
 		"${CMAKE_SOURCE_DIR}/app/src/database/powersupply_db.c"
 		"${CMAKE_SOURCE_DIR}/app/src/database/measurement_db.c"
 		"${CMAKE_SOURCE_DIR}/app/src/actuator/ACT_BlowerCmd.c"
+		"${CMAKE_SOURCE_DIR}/app/src/actuator/ACT_BrakePower.c"
+		"${CMAKE_SOURCE_DIR}/app/src/actuator/ACT_O2ValveCmd.c"
+		"${CMAKE_SOURCE_DIR}/app/src/actuator/ACT_ValveCmd.c"
+		"${CMAKE_SOURCE_DIR}/app/src/actuator/ACT_ValveDetected.c"
 		"${CMAKE_SOURCE_DIR}/app/src/general/Saturation.c"
 	)
 
